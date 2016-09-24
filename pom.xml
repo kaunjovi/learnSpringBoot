@@ -34,10 +34,9 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
-				<version>1.2.1</version>
 				<configuration>
-                    <mainClass>fun.and.games.MyApplication</mainClass>
-                </configuration>
+					<mainClass>fun.and.games.MyApplication</mainClass>
+				</configuration>
 			</plugin>
 
 			<!-- Configure the project to use java 8 version. -->
@@ -52,6 +51,7 @@
 				</configuration>
 			</plugin>
 
+			<!-- mvn -e clean install spring-boot:run -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
